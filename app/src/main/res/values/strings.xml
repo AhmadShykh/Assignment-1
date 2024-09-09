@@ -1,0 +1,167 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string-array name="mcq_questions">
+        <item>Question 1: What is the capital of France?</item>
+        <item>Question 2: Which planet is known as the Red Planet?</item>
+        <item>Question 3: What is the largest ocean on Earth?</item>
+        <item>Question 4: Who wrote "To Kill a Mockingbird"?</item>
+        <item>Question 5: What is the chemical symbol for gold?</item>
+        <item>Question 6: What is the hardest natural substance on Earth?</item>
+        <item>Question 7: Who painted the Mona Lisa?</item>
+        <item>Question 8: What is the smallest prime number?</item>
+        <item>Question 9: Who is known as the "Father of Computers"?</item>
+        <item>Question 10: What gas do plants primarily use for photosynthesis?</item>
+        <item>Question 11: What is the tallest mountain in the world?</item>
+        <item>Question 12: Who discovered penicillin?</item>
+        <item>Question 13: What year did the Titanic sink?</item>
+        <item>Question 14: What is the most abundant gas in the Earth\'s atmosphere?</item>
+        <item>Question 15: What is the largest desert in the world?</item>
+        <item>Question 16: Who was the first President of the United States?</item>
+        <item>Question 17: What is the currency of Japan?</item>
+        <item>Question 18: Who wrote the play "Romeo and Juliet"?</item>
+        <item>Question 19: What is the capital city of Australia?</item>
+        <item>Question 20: What is the name of our galaxy?</item>
+    </string-array>
+
+    <!-- Define the string array for options -->
+    <string-array name="mcq_options_1">
+        <item>Paris</item>
+        <item>London</item>
+        <item>Berlin</item>
+        <item>Madrid</item>
+    </string-array>
+
+    <string-array name="mcq_options_2">
+        <item>Earth</item>
+        <item>Venus</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+    </string-array>
+
+    <string-array name="mcq_options_3">
+        <item>Atlantic Ocean</item>
+        <item>Indian Ocean</item>
+        <item>Arctic Ocean</item>
+        <item>Pacific Ocean</item>
+    </string-array>
+
+    <string-array name="mcq_options_4">
+        <item>Harper Lee</item>
+        <item>J.K. Rowling</item>
+        <item>Mark Twain</item>
+        <item>Ernest Hemingway</item>
+    </string-array>
+
+    <string-array name="mcq_options_5">
+        <item>Au</item>
+        <item>Ag</item>
+        <item>Fe</item>
+        <item>Hg</item>
+    </string-array>
+
+    <string-array name="mcq_options_6">
+        <item>Diamond</item>
+        <item>Gold</item>
+        <item>Iron</item>
+        <item>Platinum</item>
+    </string-array>
+
+    <string-array name="mcq_options_7">
+        <item>Leonardo da Vinci</item>
+        <item>Vincent van Gogh</item>
+        <item>Pablo Picasso</item>
+        <item>Claude Monet</item>
+    </string-array>
+
+    <string-array name="mcq_options_8">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="mcq_options_9">
+        <item>Alan Turing</item>
+        <item>Charles Babbage</item>
+        <item>John von Neumann</item>
+        <item>Konrad Zuse</item>
+    </string-array>
+
+    <string-array name="mcq_options_10">
+        <item>Oxygen</item>
+        <item>Carbon Dioxide</item>
+        <item>Nitrogen</item>
+        <item>Hydrogen</item>
+    </string-array>
+
+    <string-array name="mcq_options_11">
+        <item>Mount Kilimanjaro</item>
+        <item>Mount Everest</item>
+        <item>K2</item>
+        <item>Kangchenjunga</item>
+    </string-array>
+
+    <string-array name="mcq_options_12">
+        <item>Alexander Fleming</item>
+        <item>Louis Pasteur</item>
+        <item>Marie Curie</item>
+        <item>Gregor Mendel</item>
+    </string-array>
+
+    <string-array name="mcq_options_13">
+        <item>1905</item>
+        <item>1912</item>
+        <item>1915</item>
+        <item>1920</item>
+    </string-array>
+
+    <string-array name="mcq_options_14">
+        <item>Oxygen</item>
+        <item>Nitrogen</item>
+        <item>Carbon Dioxide</item>
+        <item>Argon</item>
+    </string-array>
+
+    <string-array name="mcq_options_15">
+        <item>Sahara</item>
+        <item>Kalahari</item>
+        <item>Gobi</item>
+        <item>Antarctic Desert</item>
+    </string-array>
+
+    <string-array name="mcq_options_16">
+        <item>George Washington</item>
+        <item>Thomas Jefferson</item>
+        <item>Abraham Lincoln</item>
+        <item>John Adams</item>
+    </string-array>
+
+    <string-array name="mcq_options_17">
+        <item>Yen</item>
+        <item>Won</item>
+        <item>Dollar</item>
+        <item>Euro</item>
+    </string-array>
+
+    <string-array name="mcq_options_18">
+        <item>William Shakespeare</item>
+        <item>Charles Dickens</item>
+        <item>Jane Austen</item>
+        <item>George Orwell</item>
+    </string-array>
+
+    <string-array name="mcq_options_19">
+        <item>Sydney</item>
+        <item>Melbourne</item>
+        <item>Brisbane</item>
+        <item>Canberra</item>
+    </string-array>
+
+    <string-array name="mcq_options_20">
+        <item>Milky Way</item>
+        <item>Andromeda</item>
+        <item>Triangulum</item>
+        <item>Messier 87</item>
+    </string-array>
+</resources>

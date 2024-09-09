@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="17dp"
+                android:paddingHorizontal="17dp"
+                android:layout_marginTop="10pt"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Obtained Marks: 9999"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/obtained_marks_text"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time: 00:00"
+                    android:id="@+id/time_text"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="@string/lorem_ipsum"
+                android:id="@+id/question_text"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:id="@+id/options_group"
+
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem_ipsum"
+                    android:layout_marginBottom="10dp"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem_ipsum"
+                    android:layout_marginBottom="10dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem_ipsum"
+                    android:layout_marginBottom="10dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem_ipsum"
+                    android:layout_marginBottom="10dp"/>
+
+            </RadioGroup>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="25dp"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Previous"
+                    android:minWidth="110dp"
+                    android:id="@+id/previous_btn"
+                    android:enabled="false"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:layout_alignParentEnd="true"
+                    android:minWidth="110dp"
+                    android:id="@+id/next_btn"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/correct_ans_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/correct_opt_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Correct\nOption" />
+
+                <TextView
+
+                    android:id="@+id/correct_ans_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/lorem_ipsum"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:id="@+id/ending_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Marks: 99999"
+            android:id="@+id/total_marks_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Percentage: 999%"
+            android:layout_marginTop="30dp"
+            android:id="@+id/percent_text"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retry"
+            android:layout_marginTop="20dp"
+            android:id="@+id/retry_btn"/>
+    </LinearLayout>
+
+</RelativeLayout>
