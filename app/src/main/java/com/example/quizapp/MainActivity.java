@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     int totalMarks = 0;
     int currentIndex = 0;
     ArrayList<MCQ> mcqs = new ArrayList<MCQ>();
-    var varialbe;
+    CountDownTimer timer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -153,16 +153,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+
                 SetQuestion(mcqs.get(0));
+                totalMarks = 0;
+                currentIndex = 0;
+                timer.cancel();
+                nextBtn.setText("Next");
+                obtainedMarksText.setText("Obtained Marks: 0");
+                prevBtn.setEnabled(false);
+                StartTimer();
 
                 findViewById(R.id.main_content).setVisibility(View.VISIBLE);
                 findViewById(R.id.ending_content).setVisibility(View.INVISIBLE);
 
             }
         });
-
-
-
 
 
         SetQuestion(mcqs.get(0));
@@ -177,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void StartTimer() {
-        new CountDownTimer(120000, 1000) {
+        timer = new CountDownTimer(120000, 1000) {
             public void onTick(long timeRemaining) {
                 int min = (int) (timeRemaining / 1000) / 60;
                 int sec = (int) (timeRemaining / 1000) % 60;
